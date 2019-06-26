@@ -35,7 +35,7 @@ function wp_rig_get_insufficient_requirements_message() {
 		return sprintf( __( 'WP Rig requires at least PHP version %1$s. You are running version %2$s. Please update and try again.', 'wp-rig' ), WP_RIG_MINIMUM_PHP_VERSION, phpversion() );
 	}
 
-	return '';
+	return __( 'WP Rig requires the Block Areas plugin to be installed and activated.', 'wp-rig' );
 }
 
 /**

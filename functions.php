@@ -13,7 +13,7 @@ define( 'WP_RIG_MINIMUM_WP_VERSION', '4.5' );
 define( 'WP_RIG_MINIMUM_PHP_VERSION', '7.0' );
 
 // Bail if requirements are not met.
-if ( version_compare( $GLOBALS['wp_version'], WP_RIG_MINIMUM_WP_VERSION, '<' ) || version_compare( phpversion(), WP_RIG_MINIMUM_PHP_VERSION, '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], WP_RIG_MINIMUM_WP_VERSION, '<' ) || version_compare( phpversion(), WP_RIG_MINIMUM_PHP_VERSION, '<' ) || ! function_exists( 'block_areas' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }
