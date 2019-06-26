@@ -1,10 +1,12 @@
 <img align="right" width="90" height="90"
      src="https://avatars1.githubusercontent.com/u/38340689"
      title="WP Rig logo by Morten Rand-Hendriksen">
-# WP Rig: WordPress Theme Boilerplate
+# WP Rig: WordPress Theme Boilerplate (Blockade)
 [![Build Status](https://travis-ci.com/wprig/wprig.svg?branch=master)](https://travis-ci.com/wprig/wprig)
 [![License: GPL](https://img.shields.io/aur/license/yaourt.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 ![WP Rig version 2.0.0](https://img.shields.io/badge/version-2.0.0-blue.svg)
+
+**Disclaimer:** This *Blockade* repository is a modified variant of the original [WP Rig](https://github.com/wprig/wprig) starter theme, in order to experiment with block usage on a sitewide level, outside the content bubble. For that it uses the [Block Areas](https://github.com/wprig/block-areas) plugin, which is just as experimental.
 
 ## Your Performance-Focused Development Rig
 A progressive theme development rig for WordPress, WP Rig is built to promote the latest best practices for progressive web content and optimization. Building a theme from WP Rig means adopting this approach and the core principles it is built on:
