@@ -51,10 +51,6 @@ class Component implements Component_Interface {
 			$sizes = '100vw';
 		}
 
-		if ( wp_rig()->is_primary_sidebar_active() ) {
-			$sizes = '(min-width: 960px) 75vw, 100vw';
-		}
-
 		return $sizes;
 	}
 
@@ -84,10 +80,6 @@ class Component implements Component_Interface {
 	 */
 	public function filter_post_thumbnail_sizes_attr( array $attr, WP_Post $attachment, $size ) : array {
 		$attr['sizes'] = '100vw';
-
-		if ( wp_rig()->is_primary_sidebar_active() ) {
-			$attr['sizes'] = '(min-width: 960px) 75vw, 100vw';
-		}
 
 		return $attr;
 	}
